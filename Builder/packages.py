@@ -68,7 +68,8 @@ BASE_PACKAGES = [
     "alsa-tools",
     "alsa-utils",
     "python-pyalsa",
-    "pulseaudio-alsa"
+    "pulseaudio-alsa",
+    "pulseaudio"
 ]
 
 DEV_PACKAGES = [
