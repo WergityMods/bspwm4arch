@@ -70,7 +70,8 @@ BASE_PACKAGES = [
     "python-pyalsa",
     "pulseaudio-alsa",
     "pulseaudio",
-    "feh"
+    "feh",
+    "discord"
 ]
 
 DEV_PACKAGES = [
