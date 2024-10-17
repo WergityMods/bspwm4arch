@@ -24,37 +24,21 @@ Shift_L + alt
 	sh $HOME/bin/change_language.sh
     
 # Launch Rofi Menu
-super + {d,x}
+super + {r,x}
     {rofi -show drun,sh $HOME/bin/powermenu}
 
 # Launch Applications
-super + shift + {f,n,p,t,c,v,i,x,q,k,l}
+super + shift + {f,n,t,c,x,k,l}
 	{firefox, \
 	thunar, \
-	pavucontrol, \
 	telegram-desktop, \
 	code, \
-	virtualbox, \
-	firefox --private-window, \
 	sh $HOME/bin/xcolor-pick, \
-	sh $HOME/bin/bible, \
 	alacritty -e calcurse, \
 	sh $HOME/bin/screen-lock}
-     
-# Select window to close
-ctrl + super + alt + k
-	{xkill}
-
-# Volume controls
-XF86Audio{RaiseVolume,LowerVolume,Mute}
-    sh $HOME/bin/volume{ --up, --down, --toggle}
-
-# Brightness controls
-XF86MonBrightness{Up,Down}
-    sh $HOME/bin/brightness{ --up, --down}
 
 # screenshot
-Print
+super + shift + s
     flameshot gui
 
 #
@@ -63,12 +47,8 @@ Print
 #
 #
 
-# quit/restart bspwm
-ctrl + shift + {q,r}
-    bspc {quit,wm -r}
-
 # close and kill
-super + c
+super + q
     bspc node -c
 
 # alternate between the tiled and monocle layout
