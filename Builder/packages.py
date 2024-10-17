@@ -63,7 +63,12 @@ BASE_PACKAGES = [
     "ttf-jetbrains-mono",
     "ttf-jetbrains-mono-nerd",
     "ttf-fira-code",
-    "ttf-iosevka-nerd"
+    "ttf-iosevka-nerd",
+    "alsa-plugins",
+    "alsa-tools",
+    "alsa-utils",
+    "python-pyalsa",
+    "pulseaudio-alsa"
 ]
 
 DEV_PACKAGES = [
