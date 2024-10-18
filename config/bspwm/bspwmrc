@@ -1,13 +1,10 @@
 #! /bin/sh
 
-
 pgrep -x sxhkd > /dev/null || sxhkd &
-
-# fix some Java applications
-# wmname LG3D
 
 # workspaces
 bspc monitor primary -d 1 2 3 4 5 6 7
+bspc monitor DisplayPort-2 -d 1 2 3 4 5 6 7
 
 bspc config focus_follows_pointer true
 
@@ -52,6 +49,4 @@ dunst -config $HOME/.config/bspwm/dunstrc &
 # start compositor
 picom --config $HOME/.config/bspwm/picom_configurations/1.conf &
 
-# autostart
 flameshot &
-
